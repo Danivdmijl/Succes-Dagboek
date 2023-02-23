@@ -13,18 +13,26 @@ table, th, td {
     &__date{
         background: none;
         border: none;
+        padding: 0.5rem;
 
     }
 
     &__td--date{
         width: 2rem;
         background: none;
+        padding: 0.5rem;
+    }
+    
+    &__td--text{
+        height: 7.5rem;
+        background: none;
     }
 
     &__textField{
         background: none;
+        padding: 0.6rem;
         border: none;
-        resize: none;
+        resize: vertical;
         width: 100%;
         height: 100%;
     }

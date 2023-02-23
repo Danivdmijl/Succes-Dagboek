@@ -24,7 +24,7 @@ docPDF.html(elementHTML, {
  },
  x: 15,
  y: 100,
- width:230,
+ width:1500,
  windowWidth: 1300
 });
 }

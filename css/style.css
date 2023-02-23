@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   gap: 3rem;
   padding: 5rem;
+  overflow: hidden;
 }
 
 table, th, td {
@@ -34,15 +35,22 @@ table, th, td {
 .table__date {
   background: none;
   border: none;
+  padding: 0.5rem;
 }
 .table__td--date {
   width: 2rem;
   background: none;
+  padding: 0.5rem;
+}
+.table__td--text {
+  height: 7.5rem;
+  background: none;
 }
 .table__textField {
   background: none;
+  padding: 0.6rem;
   border: none;
-  resize: none;
+  resize: vertical;
   width: 100%;
   height: 100%;
 }
