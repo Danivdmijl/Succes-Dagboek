@@ -1,2 +1,4 @@
 @use "./abstracts/reset";
-@use "./base.scss"
+@use "./base.scss";
+@use "./components/table.scss";
+@use "./components/printButton.scss";
