@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
   <img src="img/site-logo.png" alt="Logo Website ">
 
-  <h3>SUCCES DAGBOEK</h3>
-    <table class="table" id="printTable">
-        <tr class="table__tr--1">
-          <th class="table__th--date">Succes/Datum</th>
-          <th class="table__th">Succes 1</th>
-          <th class="table__th">Succes 2</th>
-          <th class="table__th">Succes 3</th>
-        </tr>
-        <tr class="table__tr--1">
-          <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+  <h3 class="h3__dagboek">SUCCES DAGBOEK</h3>
+  <table class="table" id="printTable">
+    <tr class="table__tr--1">
+      <th class="table__th--date">Succes/Datum</th>
+      <th class="table__th">Succes 1</th>
+      <th class="table__th">Succes 2</th>
+      <th class="table__th">Succes 3</th>
+    </tr>
+    <tr class="table__tr--1">
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
 
-        </tr>
-        <tr>
-          <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-        </tr>
-        <tr>
-            <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          </tr>
-          <tr>
-            <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          </tr>
-          <tr>
-            <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          </tr>
-          <tr>
-            <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          </tr>
-          <tr>
-            <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-            <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
-          </tr>
-      </table> 
-      <button class="printButton" id="printButton" onclick="PrintClicked(), print()">Print</button>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+    <tr>
+      <td class="table__td--date"><input type="date" id="succesdatum" name="succesdatum" class="table__date"></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+      <td class="table__td--text"><textarea class="table__textField" id="freeform" name="freeform"></textarea></td>
+    </tr>
+  </table>
+  <button class="printButton" id="printButton" onclick="PrintClicked(), print()">Downloaden</button>
 </body>
+
 </html>

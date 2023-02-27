@@ -8,19 +8,21 @@ table, th, td {
     &__th{  
         height: 5rem;
         width: 30rem;
+        font-weight: 500;
     }
 
     &__date{
         background: none;
         border: none;
         padding: 0.5rem;
-
+        font-family: 'Ubuntu', sans-serif;
     }
 
-    &__td--date{
+    &__th--date{
         width: 2rem;
         background: none;
         padding: 0.5rem;
+        font-weight: 500;
     }
     
     &__td--text{
@@ -35,5 +37,6 @@ table, th, td {
         resize: vertical;
         width: 100%;
         height: 100%;
+        font-family: 'Ubuntu', sans-serif;
     }
 }
