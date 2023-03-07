@@ -20,7 +20,6 @@ body {
   flex-direction: column;
   gap: 3rem;
   padding: 1rem;
-  overflow: hidden;
   font-family: "Ubuntu", sans-serif;
 }
 
