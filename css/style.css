@@ -25,6 +25,7 @@ body {
 
 .h3__dagboek {
   font-weight: 500;
+  color: rgb(23, 168, 163);
 }
 
 table, th, td {
@@ -36,18 +37,22 @@ table, th, td {
   height: 5rem;
   width: 30rem;
   font-weight: 500;
+  color: rgb(23, 168, 163);
 }
 .table__date {
   background: none;
   border: none;
   padding: 0.5rem;
   font-family: "Ubuntu", sans-serif;
+  color: rgb(23, 168, 163);
 }
 .table__th--date {
   width: 2rem;
   background: none;
   padding: 0.5rem;
   font-weight: 500;
+  color: rgb(23, 168, 163);
+  color: rgb(23, 168, 163);
 }
 .table__td--text {
   height: 7.5rem;
@@ -71,16 +76,31 @@ table, th, td {
   background: rgba(25, 179, 173, 0.7);
   border: none;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  color: rgb(54, 54, 54);
 }
 .printButton:hover {
   cursor: pointer;
+  background: rgba(171, 238, 236, 0.7);
+  border: solid 0.2rem rgba(25, 179, 173, 0.7);
 }
 
 @media screen and (max-width: 57.87rem) {
   body {
     overflow: scroll;
   }
+}
+.nameField__wrapper {
+  width: 104.5rem;
+}
+
+.nameField {
+  background-color: rgba(25, 179, 173, 0.7);
+  border: solid 0.1rem black;
+  height: 2.7rem;
+  width: 15rem;
+  padding: 0.4rem;
+  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
