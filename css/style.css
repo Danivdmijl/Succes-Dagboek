@@ -33,6 +33,10 @@ table, th, td {
   border-collapse: collapse;
 }
 
+textarea, input {
+  outline: none;
+}
+
 .table__th {
   height: 5rem;
   width: 30rem;

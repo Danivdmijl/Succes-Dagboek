@@ -3,6 +3,8 @@ table, th, td {
     border-collapse: collapse;
   }
 
+  textarea, input { outline: none; }
+
 .table{
 
     &__th{  
