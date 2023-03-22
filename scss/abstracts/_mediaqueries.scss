@@ -1,7 +1,15 @@
 @use "../base.scss";
+@use "../components/nameField.scss";
 
 @media screen and (max-width: 57.87rem){
     body{
         overflow: scroll;
     }
+}
+
+@media screen and (max-width: 68.87rem){
+    .nameField__wrapper {
+        width: 100%;
+        justify-content: center;
+      }
 }

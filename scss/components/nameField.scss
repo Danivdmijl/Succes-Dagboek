@@ -1,5 +1,7 @@
 .nameField__wrapper {
-    width: 104.5rem;
+    display: flex;
+    width: 104rem;
+    justify-content: flex-start;
   }
  
 .nameField{
@@ -8,7 +10,14 @@
   height: 2.7rem;
   width: 15rem;
   padding: 0.4rem;
-  box-shadow: 0 8px 70px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 70px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
   outline: none;
+}
+
+.title__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 71.5%;
 }
   

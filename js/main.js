@@ -15,6 +15,8 @@ docPDF.html(elementHTML, {
 }
 }
 
+// Opslaan Naam invulveld
+
 const nameInput = document.querySelector('.nameField');
 
 // Haal de naam op uit de localStorage
@@ -26,108 +28,60 @@ nameInput.addEventListener('change', () => {
   localStorage.setItem('name', nameInput.value);
 });
 
-const successDateInput = document.querySelector('#succesdatum');
-const freeformInputs = document.querySelectorAll('.table__textField');
+// opslaan Succes Datums
 
-// Haal de opgeslagen waarden op en stel deze in als de standaardwaarden van de tekstvakken
-if (localStorage.getItem('successDate')) {
-  successDateInput.value = localStorage.getItem('successDate');
-}
+const successDateInputs = [
+  document.querySelector('#succesdatum'),
+  document.querySelector('#succesdatum2'),
+  document.querySelector('#succesdatum3'),
+  document.querySelector('#succesdatum4'),
+  document.querySelector('#succesdatum5'),
+  document.querySelector('#succesdatum6'),
+  document.querySelector('#succesdatum7')
+];
 
-if (localStorage.getItem('freeform1')) {
-  freeformInputs[0].value = localStorage.getItem('freeform1');
-}
-
-if (localStorage.getItem('freeform2')) {
-  freeformInputs[1].value = localStorage.getItem('freeform2');
-}
-
-if (localStorage.getItem('freeform3')) {
-  freeformInputs[2].value = localStorage.getItem('freeform3');
-}
-
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[3].value = localStorage.getItem('freeform3');
-}
-  
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[4].value = localStorage.getItem('freeform3');
-}
-  
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[5].value = localStorage.getItem('freeform3');
-}
-  
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[6].value = localStorage.getItem('freeform3');
-}
-  
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[7].value = localStorage.getItem('freeform3');
-}
-
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[8].value = localStorage.getItem('freeform3');
-}
-
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[9].value = localStorage.getItem('freeform3');
-}
-
-if (localStorage.getItem('freeform1')) {
-    freeformInputs[10].value = localStorage.getItem('freeform1');
+successDateInputs.forEach((input, index) => {
+  const localStorageKey = `successDate${index + 1}`;
+  if (localStorage.getItem(localStorageKey)) {
+    input.value = localStorage.getItem(localStorageKey);
   }
   
-  if (localStorage.getItem('freeform2')) {
-    freeformInputs[11].value = localStorage.getItem('freeform2');
-  }
-  
-  if (localStorage.getItem('freeform3')) {
-    freeformInputs[12].value = localStorage.getItem('freeform3');
-  }
-  
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[13].value = localStorage.getItem('freeform3');
-  }
-    
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[14].value = localStorage.getItem('freeform3');
-  }
-    
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[15].value = localStorage.getItem('freeform3');
-  }
-    
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[16].value = localStorage.getItem('freeform3');
-  }
-    
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[17].value = localStorage.getItem('freeform3');
-  }
-  
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[18].value = localStorage.getItem('freeform3');
-  }
-  
-  if (localStorage.getItem('freeform3')) {
-      freeformInputs[19].value = localStorage.getItem('freeform3');
-}
-    
-if (localStorage.getItem('freeform3')) {
-    freeformInputs[19].value = localStorage.getItem('freeform3');
-}
-
-
-
-// Sla de inhoud van de tekstvakken op in de localStorage wanneer de gebruiker de inhoud wijzigt
-successDateInput.addEventListener('change', () => {
-  localStorage.setItem('successDate', successDateInput.value);
-});
-
-freeformInputs.forEach((input, index) => {
   input.addEventListener('change', () => {
-    localStorage.setItem(`freeform${index+1}`, input.value);
+    localStorage.setItem(localStorageKey, input.value);
   });
 });
 
+const freeformInputs = [
+  document.querySelector('#freeform'),
+  document.querySelector('#freeform2'),
+  document.querySelector('#freeform3'),
+  document.querySelector('#freeform4'),
+  document.querySelector('#freeform5'),
+  document.querySelector('#freeform6'),
+  document.querySelector('#freeform7'),
+  document.querySelector('#freeform8'),
+  document.querySelector('#freeform9'),
+  document.querySelector('#freeform10'),
+  document.querySelector('#freeform11'),
+  document.querySelector('#freeform12'),
+  document.querySelector('#freeform13'),
+  document.querySelector('#freeform14'),
+  document.querySelector('#freeform15'),
+  document.querySelector('#freeform16'),
+  document.querySelector('#freeform17'),
+  document.querySelector('#freeform18'),
+  document.querySelector('#freeform19'),
+  document.querySelector('#freeform20'),
+  document.querySelector('#freeform21')
+];
+
+freeformInputs.forEach((input, index) => {
+  const localStorageKey = `freeform${index + 1}`;
+  if (localStorage.getItem(localStorageKey)) {
+    input.value = localStorage.getItem(localStorageKey);
+  }
+  
+  input.addEventListener('change', () => {
+    localStorage.setItem(localStorageKey, input.value);
+  });
+});

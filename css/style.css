@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.3rem;
   padding: 1rem;
   font-family: "Ubuntu", sans-serif;
 }
@@ -42,7 +42,7 @@ table, th, td {
 .table__date {
   background: none;
   border: none;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-family: "Ubuntu", sans-serif;
   color: rgb(23, 168, 163);
 }
@@ -84,13 +84,10 @@ table, th, td {
   border: solid 0.2rem rgba(25, 179, 173, 0.7);
 }
 
-@media screen and (max-width: 57.87rem) {
-  body {
-    overflow: scroll;
-  }
-}
 .nameField__wrapper {
-  width: 104.5rem;
+  display: flex;
+  width: 104rem;
+  justify-content: flex-start;
 }
 
 .nameField {
@@ -99,8 +96,27 @@ table, th, td {
   height: 2.7rem;
   width: 15rem;
   padding: 0.4rem;
-  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   outline: none;
+}
+
+.title__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 71.5%;
+}
+
+@media screen and (max-width: 57.87rem) {
+  body {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 68.87rem) {
+  .nameField__wrapper {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
