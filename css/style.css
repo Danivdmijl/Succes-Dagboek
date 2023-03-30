@@ -44,6 +44,7 @@ textarea, input {
   color: rgb(23, 168, 163);
 }
 .table__date {
+  width: 10rem;
   background: none;
   border: none;
   padding: 0.7rem;
@@ -55,7 +56,6 @@ textarea, input {
   background: none;
   padding: 0.5rem;
   font-weight: 500;
-  color: rgb(23, 168, 163);
   color: rgb(23, 168, 163);
 }
 .table__td--text {
@@ -86,6 +86,13 @@ textarea, input {
   cursor: pointer;
   background: rgba(171, 238, 236, 0.7);
   border: solid 0.2rem rgba(25, 179, 173, 0.7);
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .nameField__wrapper {

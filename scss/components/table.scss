@@ -3,7 +3,9 @@ table, th, td {
     border-collapse: collapse;
   }
 
-  textarea, input { outline: none; }
+textarea, input {
+    outline: none;
+}
 
 .table{
 
@@ -15,6 +17,7 @@ table, th, td {
     }
 
     &__date{
+        width: 10rem;
         background: none;
         border: none;
         padding: 0.7rem;
@@ -28,8 +31,6 @@ table, th, td {
         padding: 0.5rem;
         font-weight: 500;
         color: rgb(23, 168, 163);
-        color: rgb(23, 168, 163);
-
     }
     
     &__td--text{

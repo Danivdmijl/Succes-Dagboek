@@ -15,6 +15,12 @@ docPDF.html(elementHTML, {
 }
 }
 
+function OpschonenClicked() {
+  confirm("Weet je zeker dat je je dagboek wilt Opschonen? Zodra je op OK drukt zullen je gegevens verwijderd worden en niet meer terug te vinden zijn op de site.");
+  localStorage.clear();
+  window.location.reload(true); 
+}
+
 // Opslaan Naam invulveld
 
 const nameInput = document.querySelector('.nameField');
