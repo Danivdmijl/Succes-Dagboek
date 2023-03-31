@@ -1,3 +1,95 @@
+const body = document.querySelector('body');
+
+const logo = document.createElement('img');
+logo.setAttribute('src', 'img/site-logo.png');
+logo.setAttribute('alt', 'Logo Website');
+body.appendChild(logo);
+
+const nameFieldWrapper = document.createElement('figure');
+nameFieldWrapper.classList.add('nameField__wrapper');
+
+const nameField = document.createElement('input');
+nameField.classList.add('nameField');
+nameField.setAttribute('type', 'text');
+nameField.setAttribute('placeholder', 'Vul hier je naam in');
+nameFieldWrapper.appendChild(nameField);
+
+const titleWrapper = document.createElement('div');
+titleWrapper.classList.add('title__wrapper');
+
+const title = document.createElement('h3');
+title.classList.add('h3__dagboek');
+title.textContent = 'Succes Dagboek';
+titleWrapper.appendChild(title);
+
+nameFieldWrapper.appendChild(titleWrapper);
+body.appendChild(nameFieldWrapper);
+
+const table = document.createElement('table');
+table.classList.add('table');
+table.setAttribute('id', 'printTable');
+
+const tr1 = document.createElement('tr');
+tr1.classList.add('table__tr--1');
+
+const thDate = document.createElement('th');
+thDate.classList.add('table__th--date');
+thDate.textContent = 'Succes/Datum';
+tr1.appendChild(thDate);
+
+const th1 = document.createElement('th');
+th1.classList.add('table__th');
+th1.textContent = 'Succes 1';
+tr1.appendChild(th1);
+
+const th2 = document.createElement('th');
+th2.classList.add('table__th');
+th2.textContent = 'Succes 2';
+tr1.appendChild(th2);
+
+const th3 = document.createElement('th');
+th3.classList.add('table__th');
+th3.textContent = 'Succes 3';
+tr1.appendChild(th3);
+
+table.appendChild(tr1);
+
+for (let i = 1; i <= 7; i++) {
+  const tr = document.createElement('tr');
+  tr.classList.add('table__tr--' + i);
+
+  const tdDate = document.createElement('td');
+  tdDate.classList.add('table__td--date');
+
+  const inputDate = document.createElement('input');
+  inputDate.setAttribute('type', 'date');
+  inputDate.setAttribute('id', 'succesdatum' + i);
+  inputDate.setAttribute('name', 'succesdatum');
+  inputDate.classList.add('table__date');
+
+  tdDate.appendChild(inputDate);
+  tr.appendChild(tdDate);
+
+  for (let j = 1; j <= 3; j++) {
+    const tdText = document.createElement('td');
+    tdText.classList.add('table__td--text');
+
+    const textarea = document.createElement('textarea');
+    textarea.classList.add('table__textField');
+    textarea.setAttribute('id', 'freeform' + (i - 1) * 3 + j);
+    textarea.setAttribute('name', 'freeform');
+
+    tdText.appendChild(textarea);
+    tr.appendChild(tdText);
+  }
+
+  table.appendChild(tr);
+}
+
+body.appendChild(table);
+
+
+
 function PrintClicked() {
 window.jsPDF = window.jspdf.jsPDF;
 var docPDF = new jsPDF();
