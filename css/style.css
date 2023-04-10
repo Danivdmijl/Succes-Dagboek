@@ -25,11 +25,11 @@ body {
 
 .h3__dagboek {
   font-weight: 500;
-  color: rgb(23, 168, 163);
+  color: rgb(25, 174, 170);
 }
 
 table, th, td {
-  border: 0.2rem solid black;
+  border: 0.2rem solid rgb(25, 174, 170);
   border-collapse: collapse;
 }
 
@@ -41,7 +41,7 @@ textarea, input {
   height: 5rem;
   width: 30rem;
   font-weight: 500;
-  color: rgb(23, 168, 163);
+  color: rgb(25, 174, 170);
 }
 .table__date {
   width: 10rem;
@@ -49,14 +49,14 @@ textarea, input {
   border: none;
   padding: 0.7rem;
   font-family: "Ubuntu", sans-serif;
-  color: rgb(23, 168, 163);
+  color: rgb(25, 174, 170);
 }
 .table__th--date {
   width: 2rem;
   background: none;
   padding: 0.5rem;
   font-weight: 500;
-  color: rgb(23, 168, 163);
+  color: rgb(25, 174, 170);
 }
 .table__td--text {
   height: 7.5rem;
@@ -77,7 +77,7 @@ textarea, input {
   width: 11rem;
   height: 4rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: rgba(25, 179, 173, 0.7);
+  background: rgba(25, 174, 170, 0.65);
   border: none;
   font-family: "Ubuntu", sans-serif;
   color: rgb(54, 54, 54);
@@ -102,12 +102,11 @@ textarea, input {
 }
 
 .nameField {
-  background-color: rgba(25, 179, 173, 0.7);
-  border: solid 0.1rem black;
+  background-color: rgba(25, 174, 170, 0.65);
+  border: solid 0.1rem rgb(19, 133, 129);
   height: 2.7rem;
   width: 15rem;
   padding: 0.4rem;
-  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
