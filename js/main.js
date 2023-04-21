@@ -4,7 +4,7 @@ class SuccessTable {
 
     // create logo image
     const logoImg = document.createElement('img');
-    logoImg.setAttribute('src', 'img/site-logo.png');
+    logoImg.setAttribute('src', 'img/site-logo.webp');
     logoImg.setAttribute('alt', 'Logo Website ');
     body.appendChild(logoImg);
 
